@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Morse Code Translation</string>
+    <string name="play">Играть</string>
+    <string name="morse_help">Азбука морзе</string>
+    <string name="how_play">Как играть</string>
+    <string name="exit">Выход</string>
+    <string name="choice_gm">Выберите режим игры</string>
+    <string name="letters_gm">Перевод букв</string>
+    <string name="words_gm">Перевод слов в морзе</string>
+    <string name="morse_gm">Перевод слов из морзе</string>
+    <string name="mix">Микс</string>
+    <string name="back">Назад</string>
+    <string name="check">Проверить</string>
+    <string name="game_mode">Режим игры</string>
+    <string name="morse_code_translation">MORSE CODE TRANSLATION</string>
+</resources>

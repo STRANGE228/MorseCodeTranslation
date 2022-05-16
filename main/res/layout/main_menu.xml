@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="409sp"
+        android:layout_height="145sp"
+        android:layout_marginTop="56sp"
+        android:fontFamily="@raw/veles"
+        android:text="@string/morse_code_translation"
+        android:textAlignment="center"
+        android:textColor="#ff27BA"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play"
+        android:layout_width="246sp"
+        android:layout_height="59sp"
+        android:layout_marginTop="72sp"
+        android:bufferType="spannable"
+        android:filterTouchesWhenObscured="false"
+        android:includeFontPadding="false"
+        android:outlineProvider="none"
+        android:scrollbarStyle="insideInset"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:text="@string/play"
+        android:textColor="#FAF9F9"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:background="@drawable/my_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_help"
+        android:layout_width="246sp"
+        android:layout_height="59sp"
+        android:textColor="#FAF9F9"
+        android:textSize="30sp"
+        android:layout_marginTop="32sp"
+        android:text="@string/morse_help"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_play"
+        android:background="@drawable/my_button"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_how_play"
+        android:layout_width="246sp"
+        android:layout_height="59sp"
+        android:textColor="#FAF9F9"
+        android:textSize="30sp"
+        android:layout_marginTop="32sp"
+        android:text="@string/how_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_help"
+        android:background="@drawable/my_button"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_exit"
+        android:layout_width="246sp"
+        android:layout_height="59sp"
+        android:layout_marginTop="32sp"
+        android:text="@string/exit"
+        android:textColor="#FAF9F9"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_how_play"
+        app:layout_constraintVertical_bias="0.029"
+        android:background="@drawable/my_button"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
